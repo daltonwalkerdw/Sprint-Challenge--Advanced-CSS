@@ -1,1 +1,34 @@
 // Mixins Here
+.flex(@direction:row){
+    display:flex;
+    flex-direction: @direction;
+}
+
+.astyle(){
+    text-decoration: none;
+    background: @nav-bg;
+    color:@nav-font;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    padding-right: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.button(@color; @width;){
+    background-color:@color;
+    width: @width;
+    color: #F6F6F6;
+    font-size: 2rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.buttonhover(){
+    color:#22283A;
+    background-color: @waterloo;
+}
